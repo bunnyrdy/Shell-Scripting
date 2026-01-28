@@ -1,0 +1,7 @@
+{
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.quickSuggestions": {
+        "other": "off"
+    },
+    "editor.suggestOnTriggerCharacters": false
+}

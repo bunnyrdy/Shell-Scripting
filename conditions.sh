@@ -1,7 +1,7 @@
 #!bin/bash
 
 # This script demonstrates conditional statements in shell scripting
-NUMBER = $1
+NUMBER=$1
 
 if [ $NUMBER -gt 5 ]
 then 
