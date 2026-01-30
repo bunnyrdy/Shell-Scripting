@@ -28,7 +28,7 @@ fi
 for i in $@
 do
     echo "package to install: $i"
-    dnf list installed $i &>>$LOGFILE
+    dnf list installed $i &>>$LOG_FILE
     if [$? -eq 0 ]
     then
         echo "already installed: $i ... skipping"
