@@ -33,7 +33,8 @@ do
     then
         echo "already installed ... skipping"
     else
-        echo "not installed .... need to install"
+       dnf install $i -y &>>$LOG_FILE
+         VALIDATE $? "installion of $i"
        
     fi
 
