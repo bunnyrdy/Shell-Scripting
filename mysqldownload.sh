@@ -8,7 +8,8 @@ G="\e[0;32m"
 Y="\e[0;33m"
 N="\e[0m"
 
-
+echo "please enter DB password:"
+read -s mysql_root_password
 VALIDATE(){
     if [ $1 -ne 0 ]
     then 
@@ -47,10 +48,10 @@ fi
 
    #BELOW CODE WILL BE USEFULL FOR IDEMPTENT NATURE
 
-   mysql -h  db.fortunechits.online -uroot -pmysql@123 -e 'show databases' &>>$LOGFILE
+   mysql -h  db.fortunechits.online -uroot -p${mysql_root_password} -e 'show databases' &>>$LOGFILE
    if [ $? -ne 0 ] 
    then
-        mysql_secure_installation --set-root-pass mysql@123 &>>$LOGFILE
+        mysql_secure_installation --set-root-pass ${mysql_root_password} &>>$LOGFILE
     else
         echo "mysql root password is already set up"
     fi
