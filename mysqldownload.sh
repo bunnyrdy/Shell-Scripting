@@ -47,7 +47,7 @@ fi
 
    #BELOW CODE WILL BE USEFULL FOR IDEMPTENT NATURE
 
-   mysql -h  db.fortunechits.online -uroot -pmysql@12345 -e 'show databases' &>>$LOGFILE
+   mysql -h  db.fortunechits.online -uroot -pmysql@123 -e 'show databases' &>>$LOGFILE
    if [ $? -ne 0 ] 
    then
         mysql_secure_installation --set-root-pass mysql@123 &>>$LOGFILE
