@@ -9,7 +9,7 @@ G="\e[0;32m"
 Y="\e[0;33m"
 N="\e[0m"
 
-VATIDATE(){
+VALIDATE(){
     
     if [ $1 -ne 0 ]
     then
