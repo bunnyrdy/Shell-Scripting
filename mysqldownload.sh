@@ -53,6 +53,7 @@ fi
         mysql_secure_installation --set-root-pass mysql@123 &>>$LOGFILE
     else
         echo "mysql root password is already set up"
+    fi
 
 
 
