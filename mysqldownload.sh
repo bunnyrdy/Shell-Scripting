@@ -22,6 +22,7 @@ VALIDATE(){
 if [ $USERID -ne 0 ]
 then
     echo "please run the script in root access."
+    exit 1
 else
     echo "you are root user"
 fi
