@@ -1,1 +1,0 @@
-This repo is for tyhe devops to learn devops 
