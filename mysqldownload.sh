@@ -37,3 +37,12 @@ else
     VALIDATE $? "INSTALLING MYSQL SERVER"
 fi
 
+    systemctl enable mysqld &>>$LOGFILE
+    VALIDATE $? "enabled mysql"
+
+    systemctl start mysqld &>>$LOGFILE
+    VALIDATE $? "started mysql"
+
+    
+
+
