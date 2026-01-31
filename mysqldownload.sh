@@ -28,7 +28,7 @@ fi
 
 dnf list installed | grep -i mysql &>>LOGFILE
 
-if [ echo "$?" -eq 0 ]
+if [ $? -eq 0 ]
  then 
     echo "mysql already installed"
 else
