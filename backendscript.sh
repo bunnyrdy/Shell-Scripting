@@ -40,6 +40,19 @@ else
     echo "user already present"
 fi
 
+mkdir -p /app
+VALIDATE $? "creating app directory"
+
+ curl -o /tmp/backend.zip https://expense-builds.s3.us-east-1.amazonaws.com/expense-backend-v2.zip
+ VALIDATE $? "downloading the code"
+
+cd /app
+npm install &>>$LOGFILE
+VALIDATE $? "installing dependancies"
+
+cp /home/ec2-user/Shell-Scripting/backend.service /etc/systemd/system/backend.service
+VALIDATE $? "copied backend service"
+
 
 
 
