@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SOURCE_DIRECTORY=/tmp/app-logs
+SOURCE_DIRECTORY=/tmp
 R="\e[0;31m"
 G="\e[0;32m"
 Y="\e[0;33m"
@@ -8,9 +8,9 @@ N="\e[0m"
 
 if [ -d $SOURCE_DIRECTORY ]
 then
- echo "$G source directory exists $N"
+ echo -e "$G source directory exists $N"
 else
- echo "$R PLEASE MAKE SURE $SOURCE_DIRECTORY EXISTS $N"
+ echo -e "$R PLEASE MAKE SURE $SOURCE_DIRECTORY EXISTS $N"
  exit 1
 fi
 
