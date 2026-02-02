@@ -14,6 +14,7 @@ else
  exit 1
 fi
 
-FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +2)
+FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +1)
+echo "delete $FILES"
 
 
