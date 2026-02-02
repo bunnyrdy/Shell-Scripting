@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SOURCE_DIRECTORY=/tmp
+SOURCE_DIRECTORY=/tmp/app-logs
 R="\e[0;31m"
 G="\e[0;32m"
 Y="\e[0;33m"
